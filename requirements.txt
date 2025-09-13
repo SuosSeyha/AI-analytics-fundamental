@@ -1,20 +1,4 @@
-# FastAPI for building API endpoints
-fastapi==0.111.2
-uvicorn==0.23.2
-
-# PyTorch CPU-only version (Streamlit Cloud doesn’t support GPU)
-torch==2.1.0+cpu
-torchvision==0.18.1+cpu
-
-# Image processing
-Pillow==10.1.0
-
-# News API client
+streamlit==1.26.1
 newsapi-python==0.2.7
-requests==2.31.0
-
-# Ngrok for exposing local server
-pyngrok==5.2.1
-
-# Numeric computations
-numpy==1.26.2
+transformers==4.41.2
+torch==2.3.0
