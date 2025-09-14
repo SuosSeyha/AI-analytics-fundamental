@@ -5,8 +5,8 @@ from transformers import pipeline
 
 # ==========================
 # 1. Init Clients
-# ==========================
-newsapi = NewsApiClient(api_key="673d312a0584433aae4bd396b0d64d36")
+# ========================== //673d312a0584433aae4bd396b0d64d36
+newsapi = NewsApiClient(api_key="6944e21569a842538c77ae3ffe7cf1d9")
 
 # Load FinBERT sentiment model
 sentiment_pipeline = pipeline("sentiment-analysis", model="yiyanghkust/finbert-tone")

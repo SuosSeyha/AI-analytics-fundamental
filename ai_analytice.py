@@ -1,4 +1,4 @@
-# app.py (improved with simple reasoning)
+# app.py (improved with simple reasoning, no ngrok)
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 import uvicorn
@@ -10,7 +10,6 @@ import torchvision.models as models
 import torch.nn as nn
 import numpy as np
 import os
-from pyngrok import ngrok
 
 app = FastAPI()
 
@@ -86,8 +85,4 @@ async def analyze_image(file: UploadFile = File(...)):
 
 
 if __name__ == "__main__":
-    # Start ngrok tunnel
-    public_url = ngrok.connect(8000)
-    print(" Public URL:", public_url)
-
     uvicorn.run(app, host="0.0.0.0", port=8000)
